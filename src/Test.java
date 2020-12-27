@@ -15,15 +15,20 @@ public class Test {
         System.out.println("请输如密码：");
         String passWord = intput.next();
         System.out.println("输入密码为："+passWord);
-    }
-    File file = new File("D:\\lanqiao\\untitled\\src\\users.xlsx");
-    ReadExcel readExcel= new ReadExcel();
-    User users[] = readExcel.readExcel(file);
 
-    for(int i=0;i<users.length;i++){
-        if()
+
+        File file = new File("D:\\Users\\lenovo\\IdeaProjects\\untitled\\src\\users.xlsx");
+        ReadExcel readExcel= new ReadExcel();
+        User users[] = readExcel.readExcel(file);
+
+        for(int i=0;i<users.length;i++){
+            if(userName.equals(users[i].getUserName()) && passWord.equals(users[i].getPassWord()))
+                System.out.println("登录成功");
+            else
+                System.out.println("登陆失败");
+        }
     }
 
-    }
+
 
 }
