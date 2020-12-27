@@ -1,3 +1,4 @@
+import java.io.File;
 import java.util.Scanner;
 
 public class Test {
@@ -15,4 +16,14 @@ public class Test {
         String passWord = intput.next();
         System.out.println("输入密码为："+passWord);
     }
+    File file = new File("D:\\lanqiao\\untitled\\src\\users.xlsx");
+    ReadExcel readExcel= new ReadExcel();
+    User users[] = readExcel.readExcel(file);
+
+    for(int i=0;i<users.length;i++){
+        if()
+    }
+
+    }
+
 }
