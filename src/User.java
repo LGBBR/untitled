@@ -2,7 +2,7 @@ public class User {
     private String userName;
     private String passWord;
     private String address;
-    private  String phone;
+    private String phone;
 
     public String getUserName() {
         return userName;

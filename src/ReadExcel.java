@@ -35,7 +35,7 @@ public class ReadExcel {
                         user.setPhone(this.getValue(cell));//给phone属性赋值
                     }
                 }
-                users[j-1] = user;
+                users[j - 1] = user;
             }
 
         } catch (IOException e) {
@@ -46,7 +46,7 @@ public class ReadExcel {
 
     private String getValue(XSSFCell cell) {
         String value;
-        CellType type = cell.getCellTypeEnum();
+        CellType type = cell.getCellType();
 
         switch (type) {
             case STRING:
